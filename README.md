@@ -51,19 +51,18 @@ Indefinite integral of the function from 0 to 1: 0.3335001668335
 
 ### Explanation of Sample Output
 
-- **Definite integral**: This is the exact integral of the function \( \int_0^1 x^2 \, dx \), calculated using the `quad` function from SciPy. The result is 0.33333333333333337 with a very small error margin (error: 3.700743415417189e-15).
-- **Indefinite integral**: This is an approximation of the integral of the function \( \int_0^1 x^2 \, dx \), calculated using the `simps` function from SciPy. The result is approximately 0.3335001668335.
+- **Definite integral**:  This is the exact integral of the function <code>\(\int_0^1 x^2 \, dx\)</code>, calculated using the quad function from SciPy. The result is 0.33333333333333337 with a very small error margin (error: 3.700743415417189e-15).
+- **Indefinite integral**: This is an approximation of the integral of the function <code>\(\int_0^1 x^2 \, dx\)</code>, calculated using the simps function from SciPy. The result is approximately 0.3335001668335.
 
 ### Detailed Process of Integration
 
 1. **Definite Integral Calculation**:
 
-   The definite integral of the function \( f(x) = x^2 \) from 0 to 1 can be computed as follows:
+   The definite integral of the function <code> \( f(x) = x^2 \) </code> from 0 to 1 can be computed as follows:
 
-   \[
-   \int_0^1 x^2 \, dx = \left[ rac{x^3}{3} 
-ight]_0^1 = rac{1^3}{3} - rac{0^3}{3} = rac{1}{3} pprox 0.3333
-   \]
+   <code> \[ \int_0^1 x^2 \, dx = \left[  rac{x^3}{3}  ight]_0^1 =  rac{1^3}{3} -  rac{0^3}{3} =  rac{1}{3}  pprox 0.3333 \] </code>
+
+### Detailed Process of Integration
 
    In Python, this can be achieved using the `quad` function from SciPy:
 

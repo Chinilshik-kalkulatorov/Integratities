@@ -60,11 +60,13 @@ Indefinite integral of the function from 0 to 1: 0.3335001668335
 
 1. **Definite Integral Calculation**:
 
-   The definite integral of the function <code> \( f(x) = x^2 \) </code> from 0 to 1 can be computed as follows:
+    The definite integral of the function <code> \( f(x) = x^2 \) </code> from 0 to 1 can be computed as follows:
 
    <code>\[
-   \int_0^1 x^2 \, dx = \left[ \frac{x^3}{3} \right]_0^1 = \frac{1^3}{3} - \frac{0^3}{3} = \frac{1}{3} \approx 0.3333
+   \int_0^1 x^2 \, dx = \left[ rac{x^3}{3} 
+ight]_0^1 = rac{1^3}{3} - rac{0^3}{3} = rac{1}{3} pprox 0.3333
    \]</code>
+
 
    In Python, this can be achieved using the `quad` function from SciPy:
 

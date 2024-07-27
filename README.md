@@ -1,4 +1,10 @@
-# Integratities
+# Integratities\
+
+<code>\[
+\int_0^1 x^2 \, dx = \left[ rac{x^3}{3} 
+ight]_0^1 = rac{1^3}{3} - rac{0^3}{3} = rac{1}{3} pprox 0.3333
+\]</code>
+
 ## Basic Integration Operations with Checkmarks and Crosses
 
 This project contains Python code for performing basic integration operations using SciPy and NumPy. The user can input a function to integrate and specify the limits of integration. The script also provides plots of the functions.

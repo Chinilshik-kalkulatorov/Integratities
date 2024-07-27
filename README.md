@@ -50,6 +50,7 @@ Indefinite integral of the function from 0 to 1: 0.3335001668335
 ```
 
 
+
 ### Explanation of Sample Output
 
 - **Definite integral**: This is the exact integral of the function <code>\(\int_0^1 x^2 \, dx\)</code>, calculated using the `quad` function from SciPy. The result is 0.33333333333333337 with a very small error margin (error: 3.700743415417189e-15).
@@ -59,10 +60,11 @@ Indefinite integral of the function from 0 to 1: 0.3335001668335
 
 1. **Definite Integral Calculation**:
 
-   The definite integral of the function <code>\( f(x) = x^2 \)</code> from 0 to 1 can be computed as follows:
+   The definite integral of the function <code> \( f(x) = x^2 \) </code> from 0 to 1 can be computed as follows:
 
-   <code>\[\int_0^1 x^2 \, dx = \left[ rac{x^3}{3} 
-ight]_0^1 = rac{1^3}{3} - rac{0^3}{3} = rac{1}{3} pprox 0.3333\]</code>
+   <code>\[
+   \int_0^1 x^2 \, dx = \left[ \frac{x^3}{3} \right]_0^1 = \frac{1^3}{3} - \frac{0^3}{3} = \frac{1}{3} \approx 0.3333
+   \]</code>
 
    In Python, this can be achieved using the `quad` function from SciPy:
 
@@ -78,21 +80,24 @@ ight]_0^1 = rac{1^3}{3} - rac{0^3}{3} = rac{1}{3} pprox 0.3333\]</code>
 
 2. **Indefinite Integral Approximation**:
 
-   The indefinite integral of the function <code>\( f(x) = x^2 \)</code> from 0 to 1 can be approximated numerically using the Simpson's rule:
+   The indefinite integral of the function <code> \( f(x) = x^2 \) </code> from 0 to 1 can be approximated numerically using the Simpson's rule:
 
-   <code>\[\int_0^1 x^2 \, dx pprox 0.3335\]</code>
+   <code>\[
+   \int_0^1 x^2 \, dx \approx 0.3335
+   \]</code>
 
    In Python, this can be achieved using the `simps` function from SciPy:
 
    ```python
    import numpy as np
-   from scipy.integrate import simps
+   from scipy.integrate `simps`
 
    x = np.linspace(0, 1, 1000)
    y = x ** 2
    result = simps(y, x)
    print(f"Indefinite integral approximation: {result}")
    ```
+
 
 ### Plot
 
